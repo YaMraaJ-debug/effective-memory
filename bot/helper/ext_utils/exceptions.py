@@ -8,5 +8,5 @@ class NotSupportedExtractionArchive(Exception):
     pass
 
 
-class GDToTException(Exception):
+class DDLException(Exception):
     pass
