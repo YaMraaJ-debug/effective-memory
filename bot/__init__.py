@@ -316,6 +316,14 @@ try:
 except:
     USE_SERVICE_ACCOUNTS = False
 try:
+    PHPSESSID = get_config('PHPSESSID')
+    CRYPT = get_config('CRYPT')
+    if len(PHPSESSID) == 0 or len(CRYPT) == 0:
+        raise KeyError
+except KeyError:
+    PHPSESSID = None
+    CRYPT = None
+try:
     WEB_PINCODE = getConfig('WEB_PINCODE')
     WEB_PINCODE = WEB_PINCODE.lower() == 'true'
 except:
