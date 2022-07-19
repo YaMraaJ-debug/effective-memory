@@ -13,3 +13,6 @@ class CompressExceptionHandler(Exception):
 
 class DDLExceptionHandler(Exception):
     pass
+
+class DDLExceptionHandler(Exception):
+    pass
