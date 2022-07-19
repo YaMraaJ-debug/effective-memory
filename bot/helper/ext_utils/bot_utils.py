@@ -234,12 +234,9 @@ def is_url(url: str):
 def is_gdrive_link(url: str):
     return "drive.google.com" in url
 
-def is_appdrive_link(url: str):
+def is_gdtot_link(url: str):
     url = re.match(r'https?://(?:\S*\.)?(?:gdtot)\.\S+', url)
     return bool(url)
-
-def is_gdtot_link(url: str):
-    url = re.match(r'https?://(?:\S*\.)?(?:appdrive|driveapp)\.in/\S+', url)
 
 def is_mega_link(url: str):
     return "mega.nz" in url or "mega.co.nz" in url
