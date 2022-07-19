@@ -6,7 +6,7 @@ from time import sleep
 
 from bot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
 from bot.helper.ext_utils.bot_utils import new_thread, is_gdrive_link, is_gdtot_link
-from bot.helper.ext_utils.parser import gdtot
+from bot.helper.download_utils.ddl_generator import gdtot
 from bot.helper.ext_utils.exceptions import DDLException
 from bot.helper.telegram_helper.message_utils import sendMessage, sendMarkup, deleteMessage, delete_all_messages, update_all_messages, sendStatusMessage
 from bot.helper.telegram_helper.filters import CustomFilters
