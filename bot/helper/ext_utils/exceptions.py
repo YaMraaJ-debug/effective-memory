@@ -8,5 +8,8 @@ class NotSupportedExtractionArchive(Exception):
     pass
 
 
-class DDLException(Exception):
+class CompressExceptionHandler(Exception):
+    pass
+
+class DDLExceptionHandler(Exception):
     pass
