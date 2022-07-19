@@ -316,12 +316,6 @@ try:
 except:
     USE_SERVICE_ACCOUNTS = False
 try:
-    GDTOT_CRYPT = get_config('GDTOT_CRYPT')
-    if len(GDTOT_CRYPT) == 0:
-        raise KeyError
-except KeyError:
-    GDTOT_CRYPT = None
-try:
     WEB_PINCODE = getConfig('WEB_PINCODE')
     WEB_PINCODE = WEB_PINCODE.lower() == 'true'
 except:
